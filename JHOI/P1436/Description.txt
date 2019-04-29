@@ -1,0 +1,11 @@
+    奶牛Bessie最近在学习字符串操作，它用如下的规则逐一地构造出新的字符串：
+    S(0)="moo"
+    s(1)=s(0)+"m"+"ooo"+s(0)="moo"+"m"+"ooo"+"moo"="moomooomoo"
+    s(2)=s(1)+"m"+"oooo"+s(1)="moomooomoo"+"m"+"oooo"+"moomooomoo"="moomooomoomoooomoomooomoo"
+    ……
+    Bessie就这样产生字符串，直到最后产生的那个字符串长度不小于读入的整数N才停止。
+    通过观察，可以发现第K个字符串是由：第K-1个字符串+"m"+(k+2个o)+第k-1个字符串连接起来的。
+    现在的问题是：给出一个整数N（1<=N<=1000000000),问第N个字符是字母"m"还是"o"?
+
+
+
